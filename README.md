@@ -108,7 +108,31 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Start the SaveUserApplication.java
+Start the SaveUserApplication.java. Then, call the following end-point to add an user: 
+
+```
+POST http://localhost:9090/users
+```
+###REQUEST
+```
+{
+   "name": "Julia Fossaluzza",
+   "lastName": "Durelli",
+   "email" : "jubajuba.durelli@gmail.com",
+   "password": "secret"
+}
+```
+###RESPONSE
+```
+{
+  "id": 15438,
+  "name": "Julia Fossaluzza",
+  "lastName": "Durelli",
+  "email": "jubajuba.durelli@gmail.com",
+  "created_date": "05/09/2021",
+  "last_modified_date": "05/09/2021"
+}
+```
 
 
 <!-- LICENSE -->
